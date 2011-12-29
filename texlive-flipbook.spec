@@ -25,16 +25,8 @@ art). Animations are defined as a set of numbered files (e.g.,
 "im1.pdf", "im2.pdf", "im3.pdf", ...). The package relies on
 fancyhdr to control the corners.
 
-%pre
-    %{_sbindir}/texlive.post
-
 %post
     %{_sbindir}/texlive.post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-    fi
 
 %postun
     if [ $1 -eq 0 ]; then
@@ -187,7 +179,6 @@ fancyhdr to control the corners.
 %doc %{_texmfdistdir}/doc/latex/flipbook/flipbook-doc.tex
 %doc %{_texmfdistdir}/doc/latex/flipbook/flipbook-ex.pdf
 %doc %{_texmfdistdir}/doc/latex/flipbook/flipbook-ex.tex
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -198,5 +189,3 @@ fancyhdr to control the corners.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
