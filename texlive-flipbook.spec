@@ -6,7 +6,7 @@
 # catalog-version 0.1
 Name:		texlive-flipbook
 Version:	0.1
-Release:	1
+Release:	2
 Summary:	Typeset flipbook animations, in the corners of documents
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/flipbook
