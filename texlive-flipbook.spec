@@ -1,12 +1,12 @@
-# revision 24775
+# revision 25584
 # category Package
 # catalog-ctan /macros/latex/contrib/flipbook
-# catalog-date 2011-12-05 17:31:16 +0100
+# catalog-date 2012-03-07 15:39:23 +0100
 # catalog-license lppl
-# catalog-version 0.1
+# catalog-version 0.2
 Name:		texlive-flipbook
-Version:	0.1
-Release:	2
+Version:	0.2
+Release:	1
 Summary:	Typeset flipbook animations, in the corners of documents
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/flipbook
