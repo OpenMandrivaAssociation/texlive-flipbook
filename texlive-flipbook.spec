@@ -1,18 +1,12 @@
-# revision 25584
-# category Package
-# catalog-ctan /macros/latex/contrib/flipbook
-# catalog-date 2012-03-07 15:39:23 +0100
-# catalog-license lppl
-# catalog-version 0.2
 Name:		texlive-flipbook
-Version:	0.2
-Release:	10
+Version:	25584
+Release:	1
 Summary:	Typeset flipbook animations, in the corners of documents
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/flipbook
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/flipbook.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/flipbook.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/flipbook.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/flipbook.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -26,12 +20,12 @@ art). Animations are defined as a set of numbered files (e.g.,
 fancyhdr to control the corners.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -182,26 +176,10 @@ fancyhdr to control the corners.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Mar 27 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.2-1
-+ Revision: 787612
-- Update to latest release.
-
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.1-2
-+ Revision: 751925
-- Rebuild to reduce used resources
-
-* Fri Dec 09 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.1-1
-+ Revision: 739615
-- texlive-flipbook
-- texlive-flipbook
-
