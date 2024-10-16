@@ -3,7 +3,7 @@ Version:	25584
 Release:	2
 Summary:	Typeset flipbook animations, in the corners of documents
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/flipbook
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/flipbook
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/flipbook.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/flipbook.doc.r%{version}.tar.xz
