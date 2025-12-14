@@ -1,6 +1,6 @@
 Name:		texlive-flipbook
-Version:	25584
-Release:	2
+Version:	75878
+Release:	1
 Summary:	Typeset flipbook animations, in the corners of documents
 Group:		Publishing
 URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/flipbook
